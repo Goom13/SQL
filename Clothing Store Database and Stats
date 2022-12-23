@@ -1,0 +1,21 @@
+CREATE TABLE Clothing (id INTEGER PRIMARY KEY, name TEXT, quantity INTEGER, price INTEGER, type TEXT);
+
+INSERT INTO Clothing VALUES (1, "Air Jordan", 10, 280, "shoes");
+INSERT INTO Clothing VALUES (2, "Vans", 5, 70, "shoes");
+INSERT INTO Clothing VALUES (3, "Dunks", 2, 120, "shoes");
+INSERT INTO Clothing VALUES (4, "Coat", 19, 140, "Tops");
+INSERT INTO Clothing VALUES (5, "Flannel", 45, 45, "Tops");
+INSERT INTO Clothing VALUES (6, "Cargos", 10, 35, "Bottoms");
+INSERT INTO Clothing VALUES (7, "Levis", 28, 50, "Bottoms");
+INSERT INTO Clothing VALUES (8, "Slides", 10, 30, "Shoes");
+INSERT INTO Clothing VALUES (9, "Boots", 20, 170, "Shoes");
+INSERT INTO Clothing VALUES (10, "Sweats", 50, 32, "Bottoms");
+INSERT INTO Clothing VALUES (11, "Tech Fleece", 5, 90, "Tops");
+INSERT INTO Clothing VALUES (12, "Beanie", 10, 20, "Caps");
+INSERT INTO Clothing VALUES (13, "Glasses", 20, 85, "Accessories");
+INSERT INTO Clothing VALUES (14, "Uggs", 10, 70, "Shoes");
+INSERT INTO Clothing VALUES (15, "Hoodies", 5, 55, "Tops");
+
+SELECT price FROM Clothing ORDER BY price;
+
+SELECT SUM(price) FROM CLothing;
