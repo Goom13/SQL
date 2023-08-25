@@ -1,0 +1,28 @@
+--Create a store database
+
+CREATE TABLE gabriels_store (id INTEGER PRIMARY KEY, item TEXT, quantity INTEGER, item_type TEXT, price INTEGER);
+
+INSERT INTO gabriels_store VALUES 
+(1, "mercurials", 10, "shoes", 120),
+(2, "hypervenoms", 15, "shoes", 150),
+(3, "adidas slides", 4, "shoes", 45),
+(4, "joggers", 30, "bottoms", 35),
+(5, "jerseys", 25, "tops",40),
+(6, "watches", 13, "accessories", 80),
+(7, "chain", 11, "accessories", 220),
+(8, "slip ons", 30, "shoes", 25),
+(9, "shorts", 48, "bottoms", 25),
+(10, "sports bra", 17, "tops", 35),
+(11, "shoulder pads", 32, "equipment", 65),
+(12, "hoodie", 20, "tops", 50),
+(13, "water bottle", 80, "equipment", 15),
+(14, "gloves", 73, "equipment", 20),
+(15, "headband", 20, "accessories", 30);
+
+--display database ordered by price
+
+SELECT item, price FROM gabriels_store ORDER BY price asc;
+
+--How much of each item do I have?
+
+SELECT item_type, SUM(quantity) FROM gabriels_store GROUP BY item_type;
